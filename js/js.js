@@ -43,12 +43,19 @@ noUiSlider.create(slider, {
         '50%': 2
     }
 });
-var input = document.getElementById('js');
+var input = document.getElementById('js_value');
 slider.noUiSlider.on('update', function( values, handle ) {
 
     var value = values[handle];
     input.value = Math.round(value);
 
+});
+
+$(document).ready(function() {
+    $("select").select2({
+        placeholder: "Год рождения",
+        minimumResultsForSearch: -1
+    });
 });
 
 
