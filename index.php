@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Анкета соискателя</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -12,7 +11,7 @@
     <!--<link rel="stylesheet/less" type="text/css" href="css/main.less">
     <script src="js/less.min.js" type="text/javascript"></script>
     <link rel="canonical" href=""/>-->
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=2" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -32,7 +31,7 @@
     <h1>Анкета</h1>
 </div>
 
-<form action="" method="get">
+<form action="index.php" method="get">
 
     <div class="w100 worksheet" id="worksheet">
         <div class="container text-center">
@@ -45,7 +44,6 @@
             </label>
 
             <select name="birthday" id="select">
-                <option selected disabled>Год рождения</option>
                 <option value="2000">2000</option>
                 <option value="1999">1999</option>
                 <option value="1998">1998</option>
@@ -124,7 +122,7 @@
             <label class="checkbox" for="jQuery">jQuery</label>
 
             <input type="checkbox" name="Git" id="Git">
-            <label class="checkbox" for="Git">Иcпользую Git</label>
+            <label class="checkbox" for="Git">Использую Git</label>
 
         </div>
     </div>
@@ -140,7 +138,7 @@
                 <div class="item" onclick="slider.noUiSlider.set( 2 );">Использую готовые решения и умею и переделывать</div>
                 <div class="item" onclick="slider.noUiSlider.set( 3 );">Пишу сложный JS с нуля</div>
             </div>
-            <input type="hidden" id="js">
+            <input type="hidden" id="js_value">
             <div id="slider"></div>
 
         </div>
@@ -168,7 +166,9 @@
 
 </form>
 
-</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/select2.min.js"></script>
 <script type="text/javascript" src="js/nouislider.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/js.js?v=2"></script>
+</body>
 </html>
